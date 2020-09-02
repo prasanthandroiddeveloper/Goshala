@@ -28,7 +28,6 @@ public class CheckoutActivity extends BaseActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         final Drawable upArrow = getResources().getDrawable(R.drawable.ic_arrow_back_black_24dp);
-        //upArrow.setColorFilter(Color.parseColor("#FFFFFF"), PorterDuff.Mode.SRC_ATOP);
         getSupportActionBar().setHomeAsUpIndicator(upArrow);
 
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
@@ -41,28 +40,25 @@ public class CheckoutActivity extends BaseActivity {
 
 
     private void changeActionBarTitle(ActionBar actionBar) {
-        // Create a LayoutParams for TextView
+
         RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(
                 RelativeLayout.LayoutParams.MATCH_PARENT, // Width of TextView
                 RelativeLayout.LayoutParams.WRAP_CONTENT); // Height of TextView
         TextView tv = new TextView(getApplicationContext());
-        // Apply the layout parameters to TextView widget
+
         tv.setLayoutParams(lp);
         tv.setGravity(Gravity.CENTER);
-        //tv.setTypeface(null, Typeface.BOLD);
-        // Set text to display in TextView
-        tv.setText("Checkout"); // ActionBar title text
+
+        tv.setText("Checkout");
         Typeface tf = Typeface.createFromAsset(getApplicationContext().getAssets(), "fonts/Merienda-Bold.ttf");
         tv.setTypeface(tf);
         tv.setTextSize(20);
 
-        // Set the text color of TextView to red
-        // This line change the ActionBar title text color
         tv.setTextColor(getResources().getColor(R.color.colorPrimaryDark));
 
-        // Set the ActionBar display option
+
         actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-        // Finally, set the newly created TextView as ActionBar custom view
+
         actionBar.setCustomView(tv);
     }
 

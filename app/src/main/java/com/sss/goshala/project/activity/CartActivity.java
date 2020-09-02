@@ -205,11 +205,6 @@ public class CartActivity extends BaseActivity {
         }
     }
 
-   /* public void onChatClicked(View view) {
-        String phoneNumberWithCountryCode = "+919393939150";
-        String message = "Hi I would like to know About";
-        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(String.format("https://api.whatsapp.com/send?phone=%s&text=%s", phoneNumberWithCountryCode, message))));
-    }*/
 
 
 }

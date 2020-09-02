@@ -40,8 +40,7 @@ public class BaseActivity extends AppCompatActivity implements AddorRemoveCallba
         gson = new Gson();
         userJson = localStorage.getUserLogin();
         progressDialog = new ProgressDialog(BaseActivity.this);
-        //user = gson.fromJson(userJson, UserResult.class);
-        //  NetworkCheck.isNetworkAvailable(getApplicationContext());
+
         cartCount();
 
     }

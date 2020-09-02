@@ -213,7 +213,6 @@ public class PayuConfirmAct extends AppCompatActivity {
         pd.show();
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, REST.USERDISCOUNTCHECK, response -> {
-          //  Toast.makeText(PayuConfirmAct.this, response, Toast.LENGTH_SHORT).show();
 
             if(response.equals("NEWUSER")){
 

@@ -248,10 +248,10 @@ public class PayumoneyAct extends AppCompatActivity {
                 params.put("payment_type", "PAYU");
                 params.put("email", getemail);
                 params.put("state", getstate);// newly added
-                params.put("pincode", getpin);//todo newly added
-                params.put("areaname", getareaname);//todo newly added
-                params.put("landmark", getlandmark);//todo newly added
-                params.put("coupondisc", getcoupondisc);//todo newly added
+                params.put("pincode", getpin);
+                params.put("areaname", getareaname);
+                params.put("landmark", getlandmark);
+                params.put("coupondisc", getcoupondisc);
                 Log.i("pameters", String.valueOf(params));
 
                 return params;

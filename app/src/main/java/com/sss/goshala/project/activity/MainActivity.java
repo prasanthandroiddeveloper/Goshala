@@ -155,10 +155,7 @@ public class MainActivity extends BaseActivity
         }
         nav_footer.setOnClickListener(view -> {
             localStorage.logoutUser();
-           /* startActivity(new Intent(getApplicationContext(), LoginRegisterActivity.class));
-            finish();
-            overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right);*/
-            // Toast.makeText(getApplicationContext(), "Logout", Toast.LENGTH_LONG).show();
+
         });
 
         displaySelectedScreen(R.id.nav_home);
