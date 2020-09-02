@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D9FFFFFF">
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/sp"
+                    app:civ_border_color="@color/gray_btn_bg_color"
+                    app:civ_border_width="2dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/cardBorderColor" />
+
+                <LinearLayout
+                    android:id="@+id/labelname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <com.sss.goshala.project.customfonts.MyTextViewSansBold
+
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:textSize="@dimen/dimen_16sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:text="Name" />
+
+                    <com.sss.goshala.project.customfonts.MyTextViewSansRegular
+                        android:id="@+id/nameTv"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:text="Goshala" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/cardBorderColor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:id="@+id/labelemail"
+                    android:orientation="horizontal">
+
+                    <com.sss.goshala.project.customfonts.MyTextViewSansBold
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.5"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="Email" />
+
+                    <com.sss.goshala.project.customfonts.MyTextViewSansRegular
+                        android:id="@+id/emailTv"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:gravity="start|center"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/cardBorderColor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:id="@+id/labelmobile"
+                    android:orientation="horizontal">
+
+                    <com.sss.goshala.project.customfonts.MyTextViewSansBold
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:textStyle="bold"
+                        android:layout_weight="0.5"
+                        android:textColor="#000"
+                        android:gravity="center"
+                        android:text="Mobile" />
+
+                    <com.sss.goshala.project.customfonts.MyTextViewSansRegular
+                        android:id="@+id/mobTv"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:gravity="start|center"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/cardBorderColor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:id="@+id/labeldoorno"
+                    android:orientation="horizontal">
+
+                    <com.sss.goshala.project.customfonts.MyTextViewSansBold
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:text="Door No " />
+
+                    <com.sss.goshala.project.customfonts.MyTextViewSansRegular
+                        android:id="@+id/addrsTv"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:gravity="start|center"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/cardBorderColor" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:id="@+id/labelarea"
+                    android:orientation="horizontal">
+
+                    <com.sss.goshala.project.customfonts.MyTextViewSansBold
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:text="Area " />
+
+                    <com.sss.goshala.project.customfonts.MyTextViewSansRegular
+                        android:id="@+id/areaTv"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:gravity="start|center"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/cardBorderColor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:id="@+id/labelcity"
+                    android:orientation="horizontal">
+
+                    <com.sss.goshala.project.customfonts.MyTextViewSansBold
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:text="City " />
+
+                    <com.sss.goshala.project.customfonts.MyTextViewSansRegular
+                        android:id="@+id/cityTv"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:gravity="start|center"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/cardBorderColor" />
+
+                <Button
+                    android:id="@+id/addbtn"
+                    android:layout_width="200dp"
+                    android:gravity="center"
+                    android:text="Add Here"
+                    android:visibility="invisible"
+                    android:layout_margin="@dimen/margin_10dp"
+                    android:layout_gravity="center"
+                    android:layout_height="60dp"/>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

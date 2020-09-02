@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="250dp"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:id="@+id/icon_badge"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/cartss" />
+
+
+        <FrameLayout
+            android:id="@+id/counterValuePanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+
+            <com.sss.goshala.project.customfonts.MyTextViewSansBold
+                android:id="@+id/count"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="start|end"
+                android:background="@drawable/rounded_corner"
+                android:gravity="top|center"
+                android:text="1"
+                android:textColor="#ffffff"
+                android:textSize="80sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+
+    </FrameLayout>
+
+</RelativeLayout>

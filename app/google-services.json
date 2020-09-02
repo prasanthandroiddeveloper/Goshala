@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "241629986471",
+    "firebase_url": "https://goshala-1c49f.firebaseio.com",
+    "project_id": "goshala-1c49f",
+    "storage_bucket": "goshala-1c49f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:241629986471:android:f3bc95afe08cbc9f0d2582",
+        "android_client_info": {
+          "package_name": "com.sss.goshala.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "241629986471-tek7264ci7s8jkii395hl6qt8s1cpl6j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKCKKNfy-1Li4sDTuv4eeBs45aUMO51oI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "241629986471-tek7264ci7s8jkii395hl6qt8s1cpl6j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

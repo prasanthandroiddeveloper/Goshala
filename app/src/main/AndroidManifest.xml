@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sss.goshala.project">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:usesCleartextTraffic">
+        <activity android:name=".activity.ViewOrderDetailsAct"></activity>
+        <activity android:name=".activity.PayuConfirmAct" />
+        <activity android:name=".activity.PayumoneyAct" />
+        <activity android:name=".activity.FinalOrderAct" />
+        <activity android:name=".activity.UpiPaymentAct" />
+        <activity android:name=".activity.FinalOrderPlaced" />
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.BaseActivity" />
+        <activity
+            android:name=".activity.ProductActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity android:name=".activity.CartActivity" />
+        <activity android:name=".activity.CheckoutActivity" />
+        <activity android:name=".activity.ProductViewActivity" />
+
+        <service
+            android:name=".util.localstorage.FBase_Messaging_Service"
+            android:exported="false"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/sp" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+    </application>
+
+</manifest>
